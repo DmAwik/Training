@@ -18,14 +18,6 @@ public class CalculatorTest {
         double result=calculator.add(firstArg,secondArg);
 
         Assert.assertEquals(sum,result,0.01);
-
-        firstArg= random.nextDouble();
-        secondArg= random.nextDouble();
-        sum=firstArg+secondArg;
-
-        result=calculator.add(firstArg,secondArg);
-
-        Assert.assertEquals(sum,result,0.01);
     }
     @Test
     public void testSubtractShouldSubtractWhenNumberRandom(){
@@ -36,14 +28,6 @@ public class CalculatorTest {
         double subtraction=firstArg-secondArg;
 
         double result=calculator.subtract(firstArg,secondArg);
-
-        Assert.assertEquals(subtraction,result,0.01);
-
-        firstArg= random.nextDouble();
-        secondArg= random.nextDouble();
-        subtraction=firstArg-secondArg;
-
-        result=calculator.subtract(firstArg,secondArg);
 
         Assert.assertEquals(subtraction,result,0.01);
     }
@@ -58,14 +42,6 @@ public class CalculatorTest {
         double result=calculator.multiply(firstArg,secondArg);
 
         Assert.assertEquals(multiplication,result,0.01);
-
-        firstArg= random.nextDouble();
-        secondArg= random.nextDouble();
-        multiplication=firstArg*secondArg;
-
-        result=calculator.multiply(firstArg,secondArg);
-
-        Assert.assertEquals(multiplication,result,0.01);
     }
     @Test
     public void testDivideShouldDivideWhenNumberRandom(){
@@ -76,14 +52,6 @@ public class CalculatorTest {
         double division=firstArg/secondArg;
 
         double result=calculator.divide(firstArg,secondArg);
-
-        Assert.assertEquals(division,result,0.01);
-
-        firstArg= random.nextDouble();
-        secondArg= random.nextDouble();
-        division=firstArg/secondArg;
-
-        result=calculator.divide(firstArg,secondArg);
 
         Assert.assertEquals(division,result,0.01);
     }
